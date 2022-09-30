@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <title>Are you a cliche?</title>
 </head>
 <body>
-    hi hi hi
-</body>
+  <!-- this is the question -->
+ <div class="container">
+  <!-- <div id="question-container">
+        </div> -->
+
+    <div id="startScreen">
+    <div id="question" id="quiz-name">How much of a cliche are you?</div>
+    <button onclick="startGame()" type="button" class="btn" id="start-btn">Start</button>
+  </div>
+
+    <!-- question 1 -->
+    <div id="answerbuttons1" class="button-grid">
+      <div id="question">What is your go-to coffee order?</div>
+
+      <button onclick="selectAnswer1()" type="button" value="1" class="btn"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg" width="auto" height="100" class="questionimage">Americano</button>
+
+      <button onclick="selectAnswer1()" type="button"  value="2" class="btn"><img src="https://www.thespruceeats.com/thmb/SyX_yUyCFOtuqWC2QFrM25JTmsA=/4413x2942/filters:fill(auto,1)/how-to-make-cappuccinos-766116-hero-01-a754d567739b4ee0b209305138ecb996.jpg" height=100 width=auto class="questionimage">Cappuccino</button>
+
+      <button onclick="selectAnswer1()" type="button"  value="4" class="btn"><img src="https://globalassets.starbucks.com/assets/895d6b3916c14ad6862d88ce282e8838.jpg?impolicy=1by1_wide_topcrop_630" width=auto height=100 class="questionimage">Seasonal Flavour</button>
+
+      <button onclick="selectAnswer1()" type="button"  value="3" class="btn"><img src="https://www.caffesociety.co.uk/assets/recipe-images/espresso-small.jpg" width=auto height=100 class="questionimage">Espresso</button>
+
+      <button onclick="selectAnswer1()" type="button"  value="0" class="btn"><img src="https://emojis.wiki/emoji-pics/apple/nauseated-face-apple.png" width=auto height=100 class="questionimage">I don't like coffee</button>
+    </div>
+  
+
+   <!-- question 2 -->
+    <div id="answerbuttons2" class="button-grid">
+      <div id="question">Which is your favourite movie from the following?</div>
+
+      <button onclick="selectAnswer2()" type="button" value="4" class="btn"><img src="https://m.media-amazon.com/images/M/MV5BMTQ5NTI4NDAxMV5BMl5BanBnXkFtZTcwMTQxNDY3Mw@@._V1_.jpg" width="auto" height="100" class="questionimage">Shawshank Redemption</button>
+
+      <button onclick="selectAnswer2()" type="button" value="0" class="btn"><img src="https://m.media-amazon.com/images/M/MV5BMTc1NzQ2MDUzMl5BMl5BanBnXkFtZTcwNjg1NzYzNQ@@._V1_.jpg" height=100 width=auto class="questionimage">Girl, Interrupted</button>
+
+      <button onclick="selectAnswer2()" type="button" value="2" class="btn"><img src="https://images.bauerhosting.com/legacy/empire-tmdb/films/680/images/mte63qJaVnoxkkXbHkdFujBnBgd.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill" width=auto height=100 class="questionimage">Pulp Fiction</button>
+
+      <button onclick="selectAnswer2()" type="button" value="1" class="btn"><img src="https://www.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg" width=auto height=100 class="questionimage">Shrek</button>
+
+      <button onclick="selectAnswer2()" type="button" value="3" class="btn"><img src="https://media.timeout.com/images/100654045/image.jpg" width=auto height=100 class="questionimage">Titanic</button>
+
+    </div>
+
+       <!-- question 3 -->
+       <div id="answerbuttons3" class="button-grid">
+        <div id="question">Given the choice, how would you spend your weekend?</div>
+  
+        <button onclick="selectAnswer3()" type="button" value="2" class="btn"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/female-runner-running-at-summer-park-trail-healthy-royalty-free-image-1591373138.jpg" width="auto" height="100" class="questionimage">At the gym/exercising</button>
+  
+        <button onclick="selectAnswer3()" type="button" value="3" class="btn"><img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/09/reading-book-1296x728-header.jpg?w=1155&h=1528" height=100 width=auto class="questionimage">Reading/Watching TV</button>
+  
+        <button onclick="selectAnswer3()" type="button" value="4" class="btn"><img src="https://www.sheknows.com/wp-content/uploads/2020/04/wb4q5wbxqoei74hth8wi.png" width=auto height=100 class="questionimage">With friends or family</button>
+  
+        <button onclick="selectAnswer3()" type="button" value="1" class="btn"><img src="https://www.thesprucecrafts.com/thmb/RbW626IDffB1Sl7T82Rpo6Su6Ms=/2121x1193/smart/filters:no_upscale()/GettyImages-922707682-5b90467bc9e77c0025931eef.jpg" width=auto height=100 class="questionimage">Following a hobby/passion</button>
+  
+        <button onclick="selectAnswer3()" type="button" value="0" class="btn"><img src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(50)(140).jpg" width=auto height=100 class="questionimage">Something else because I'm mysterious</button>
+  
+      </div>
+
+         <!-- question 4 -->
+    <div id="answerbuttons4" class="button-grid">
+      <div id="question">What kind of phone do you own?</div>
+
+      <button onclick="selectAnswer4()" type="button" value="4" class="btn"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone14-202209_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1661958160494" width="auto" height="100" class="questionimage">iPhone</button>
+
+      <button onclick="selectAnswer4()" type="button" value="3" class="btn"><img src="https://images.samsung.com/is/image/samsung/p6pim/uk/2202/gallery/uk-galaxy-a53-5g-a536-sm-a536blbneub-531492884?$650_519_PNG$" height=100 width=auto class="questionimage">Samsung</button>
+
+      <button onclick="selectAnswer4()" type="button" value="2" class="btn"><img src="https://m.media-amazon.com/images/I/61S6ptpIAEL._AC_SS450_.jpg" width=auto height=100 class="questionimage">Huawei</button>
+
+      <button onclick="selectAnswer4()" type="button" value="0" class="btn"><img src="https://thumbs.dreamstime.com/b/no-cell-phone-sign-mobile-prohibited-vector-illustration-white-background-147283917.jpg" width=auto height=100 class="questionimage">I don't have a phone</button>
+
+      <button onclick="selectAnswer4()" type="button" value="1" class="btn"><img src="https://static.thenounproject.com/png/480743-200.png" width=auto height=100 class="questionimage">Something else</button>
+
+    </div>
+
+       <!-- question 5 -->
+       <div id="answerbuttons5" class="button-grid">
+        <div id="question">What is the main decor colour in your house?</div>
+  
+        <button onclick="selectAnswer5()" type="button" value="4" class="btn"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gray-living-room-3-1572014242.jpg" width="auto" height="100" class="questionimage">Grey</button>
+  
+        <button onclick="selectAnswer5()" type="button" value="3" class="btn"><img src="https://www.mydomaine.com/thmb/CM24oWk8jNdtDatM_EQEfinzExM=/735x0/cdn.cliqueinc.com__cache__posts__195087__white-room-decorating-tips-195087-1538420384126-main.700x0c-f04a78b764044bb5a3e9ff2f0f04d380.jpg" height=100 width=auto class="questionimage">White/Cream</button>
+  
+        <button onclick="selectAnswer5()" type="button" value="1" class="btn"><img src="https://i.pinimg.com/originals/35/be/df/35bedfb8b39c4a62e5cdb5cd7664d295.jpg" width=auto height=100 class="questionimage">Black</button>
+  
+        <button onclick="selectAnswer5()" type="button" value="2" class="btn"><img src="https://town-n-country-living.com/wp-content/uploads/2019/05/beach-style-living-room-1.jpg" width=auto height=100 class="questionimage">Blue/Green</button>
+  
+        <button onclick="selectAnswer5()" type="button" value="0" class="btn"><img src="http://cdn.home-designing.com/wp-content/uploads/2019/04/pink-couch-living-room.jpg" width=auto height=100 class="questionimage">Other</button>
+  
+      </div>
+
+             <!-- question 6 -->
+             <div id="answerbuttons6" class="button-grid">
+              <div id="question">How many social media accounts do you have?</div>
+        
+              <button onclick="selectAnswer6()" type="button" value="1" class="btn"><img src="https://i.pcmag.com/imagery/articles/04HUXgEu0I3mdCOejOjQpNE-5..v1620748900.jpg" width="auto" height="100" class="questionimage">Just the one</button>
+        
+              <button onclick="selectAnswer6()" type="button" value="2" class="btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn5gE2FcEXaA63H8PZ1hIxdLPPmb8jcXXW9w&usqp=CAU" height=100 width=auto class="questionimage">A couple</button>
+        
+              <button onclick="selectAnswer6()" type="button" value="3" class="btn"><img src="https://c.files.bbci.co.uk/15BD7/production/_115374098_social_media_logos.jpg" width=auto height=100 class="questionimage">Most of them</button>
+        
+              <button onclick="selectAnswer6()" type="button" value="4" class="btn"><img src="https://www.talkwalker.com/images/2020/blog-headers/meg/social-media-tips-blog-header-no-logo.png" width=auto height=100 class="questionimage">Everything, and I always download new releases</button>
+        
+              <button onclick="selectAnswer6()" type="button" value="0" class="btn"><img src="https://www.scienceofpeople.com/wp-content/uploads/2022/02/1212050_LonerPersonalityFeatured_101921-1.jpg" width=auto height=100 class="questionimage">None, I avoid social media</button>
+        
+            </div>
+             <!-- results page -->
+             <div id="resultspage" class="button-grid">
+              <div id="question">You are...</div>
+                
+            </div>
+
+
+  </div>
+</div>
+
+ </body>
 </html>
