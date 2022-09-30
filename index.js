@@ -6,6 +6,7 @@ var c = document.getElementById("answerbuttons4")
 var d = document.getElementById("answerbuttons5")
 var e = document.getElementById("answerbuttons6")
 var f = document.getElementById("resultspage")
+var addScore = document.getElementById(answerbuttons1(button.value));
 var totalScore = [];
 
 
@@ -17,6 +18,7 @@ function startGame() {
         x.style.display = "none";
         y.style.display = "block";
     }
+
 }
 
 function selectAnswer1() {
@@ -70,6 +72,4 @@ function selectAnswer6() {
     } else {
         e.style.display = "none";
         f.style.display = "block";
-    }
-}
-
+    } }
